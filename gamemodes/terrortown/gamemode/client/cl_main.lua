@@ -681,6 +681,18 @@ function GM:OnEntityCreated(ent)
 	return self.BaseClass.OnEntityCreated(self, ent)
 end
 
+---
+-- Called to allow override of the default Derma skin for all panels.
+-- @note This hook is only called on Lua start up, changing its value (or adding new hooks) after it has been already called 
+-- will not have any effect.
+-- @return string A case sensitive Derma skin name to be used as default, registered previously via <a href="https://wiki.facepunch.com/gmod/derma.DefineSkin">derma.DefineSkin</a>.<br /><br />Returning nothing, nil or invalid name will make it fallback to the "Default" skin.
+-- @hook
+-- @ref https://wiki.facepunch.com/gmod/derma.DefineSkin
+-- @local
+function GM:ForceDermaSkin()
+	return "ttt2VGUISwitcher"
+end
+
 net.Receive("TTT2PlayerAuthedShared", function(len)
 	local steamid64 = net.ReadString()
 	local name = net.ReadString()

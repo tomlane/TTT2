@@ -87,4 +87,6 @@ if SERVER then
 else
 	ttt_include("cl_hud_editor")
 	ttt_include("cl_hud_manager")
+
+	ttt_include("cl_vgui_switcher")
 end

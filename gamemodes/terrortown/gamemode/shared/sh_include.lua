@@ -34,6 +34,7 @@ TTTFiles = {
 	cl_tradio = {file = "cl_tradio.lua", on = "client"},
 	cl_tips = {file = "cl_tips.lua", on = "client"},
 	cl_transfer = {file = "cl_transfer.lua", on = "client"},
+	cl_vgui_switcher = {file = "cl_vgui_switcher.lua", on = "client"},
 	cl_voice = {file = "cl_voice.lua", on = "client"},
 	cl_weapon_pickup = {file = "cl_weapon_pickup.lua", on = "client"},
 	cl_wepswitch = {file = "cl_wepswitch.lua", on = "client"},
