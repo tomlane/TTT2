@@ -517,6 +517,7 @@ include("ttt2/extensions/net.lua")
 include("ttt2/extensions/string.lua")
 include("ttt2/extensions/table.lua")
 
+include("ttt2/extensions/sql.lua")
 include("ttt2/orm/model.lua")
 
 -- include ttt required files
